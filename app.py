@@ -9,7 +9,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 # -----------------------------------------------------------------------
 # Load the trained model
-with open('water_quality_model.pkl', 'rb') as file:
+with open('water_quality_model_1.pkl', 'rb') as file:
     model = pickle.load(file)
 scaler = StandardScaler()
 with st.sidebar:
