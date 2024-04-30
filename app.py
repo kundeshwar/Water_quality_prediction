@@ -29,7 +29,7 @@ with st.sidebar:
 # Function to predict water quality index
 def predict_water_quality(inputs):
     # Preprocess the input data
-    inputs_scaled = scaler.fit_transform(np.array(inputs).reshape(1, -1))
+    inputs_scaled = scaler.fit_transform(inputs)
     # Predict the water quality index
     prediction = model.predict(inputs_scaled)
     return prediction[0][0]
