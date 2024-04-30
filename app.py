@@ -5,7 +5,8 @@ import pickle
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 from streamlit_extras.add_vertical_space import add_vertical_space
-
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
 # -----------------------------------------------------------------------
 # Load the trained model
 with open('water_quality_model.pkl', 'rb') as file:
