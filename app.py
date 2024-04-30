@@ -8,7 +8,7 @@ from streamlit_extras.add_vertical_space import add_vertical_space
 
 # -----------------------------------------------------------------------
 # Load the trained model
-with open('/home/kcdh/Documents/KUNDESHWAR/personal/water_quality_model.pkl', 'rb') as file:
+with open('water_quality_model.pkl', 'rb') as file:
     model = pickle.load(file)
 scaler = StandardScaler()
 with st.sidebar:
